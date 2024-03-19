@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div class="container">
+    <div class="d-flex align-items-start">
+      <div
+        class="nav flex-column nav-pills me-3"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          class="nav-link active"
+          id="v-pills-bai1-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-bai1"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-bai1"
+          aria-selected="true"
+        >
+          <i class="fa fa-book"></i>bài 1
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-bai2-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-bai2"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-bai2"
+          aria-selected="false"
+        >
+          <i class="fa fa-book"></i>bài 2
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-bai3-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-bai3"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-bai3"
+          aria-selected="false"
+        >
+          <i class="fa fa-book"></i> bài 3
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-bai4-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-bai4"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-bai4"
+          aria-selected="false"
+        >
+          <i class="fa fa-book"></i> bài 4
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-bai5-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-bai5"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-bai5"
+          aria-selected="false"
+        >
+          <i class="fa fa-book"></i> bài 5
+        </button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-bai1"
+          role="tabpanel"
+          aria-labelledby="v-pills-bai1-tab"
+        >
+          <div class="card">
+            <div class="mb-3">
+              <label for="" class="form-label">tính tiền lương nhân viên</label>
+              <div id="cover__input__1">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="tienLuong1Ngay"
+                  aria-describedby="helpId"
+                  placeholder="Nhập lương 1 ngày"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soNgayLam"
+                  aria-describedby="helpId"
+                  placeholder="số ngày làm"
+                />
+              </div>
+              <button class="btn btn-danger" onclick="tinhLuong()">
+                tính lương
+              </button>
+              <div class="result" id="result__bai1"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-bai2"
+          role="tabpanel"
+          aria-labelledby="v-pills-bai2-tab"
+        >
+          <div class="card">
+            <div class="mb-3">
+              <label for="" class="form-label">Tính giá trị trung bình</label>
+              <div id="cover__input__2">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soThu1"
+                  aria-describedby="helpId"
+                  placeholder="nhập số thứ nhất"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soThu2"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ hai"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soThu3"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ ba"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soThu4"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ bốn"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="soThu5"
+                  aria-describedby="helpId"
+                  placeholder="Nhập số thứ năm"
+                />
+              </div>
+
+              <button class="btn btn-danger" onclick="tinhTrungBinh()">
+                tính Trung bình
+              </button>
+              <div class="result" id="result__bai2"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-bai3"
+          role="tabpanel"
+          aria-labelledby="v-pills-bai3-tab"
+        >
+          <div class="card">
+            <div class="mb-3">
+              <label for="" class="form-label"
+                >Quy đổi tiền từ USD sang VND</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="tienUSD"
+                aria-describedby="helpId"
+                placeholder="Nhập số tiền USD"
+              />
+              <button class="btn btn-danger" onclick="quyDoiTien()">
+                Quy đổi tiền
+              </button>
+              <div class="result" id="result__bai3"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-bai4"
+          role="tabpanel"
+          aria-labelledby="v-pills-bai4-tab"
+        >
+          <div class="card">
+            <div class="mb-3">
+              <label for="" class="form-label"
+                >Tính diện tích, chu vi hình chữ nhật</label
+              >
+              <div id="cover__input__4">
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="chieuDai"
+                  aria-describedby="helpId"
+                  placeholder="Nhập chiều dài"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="chieuRong"
+                  aria-describedby="helpId"
+                  placeholder="Nhập chiều rộng"
+                />
+              </div>
+              <button class="btn btn-danger" onclick="tinhChuViDienTich()">
+                tính
+              </button>
+              <div class="result" id="result__bai4"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-bai5"
+          role="tabpanel"
+          aria-labelledby="v-pills-bai5-tab"
+        >
+          <div class="card">
+            <div class="mb-3">
+              <label for="" class="form-label">Nhập tổng 2 kí số</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="so2ChuSo"
+                aria-describedby="helpId"
+                placeholder="Nhập số có 2 chữ số"
+              />
+              <button class="btn btn-danger" onclick="tong2KiSo()">
+                Tính tổng
+              </button>
+              <div class="result" id="result__bai5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
